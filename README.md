@@ -1,6 +1,5 @@
-# bcard
+# My Buisness Card Built With Flutter.
 
-A new Flutter project.
 
 ## Getting Started
 
