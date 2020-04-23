@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.white,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'OpSec | A.I Engineer | Full Stack',
+                'InfoSec | A.I Engineer | Full Stack',
                 style: TextStyle(
                   fontFamily: 'Orbitron',
                   fontSize: 15,
@@ -40,8 +41,14 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10),
+              SizedBox(
+                height: 20.0,
+                width: 200.0,
+                child: Divider(
+                  color: Colors.grey[900],
+                  ),
+              ),
+              Card(
                 color: Colors.blueGrey[50],
                 margin: EdgeInsets.symmetric(vertical: 10,
                 horizontal: 25
@@ -71,9 +78,8 @@ class MyApp extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.blueGrey[50],
-                padding: EdgeInsets.all(10),
                 margin: EdgeInsets.symmetric(
                   vertical: 10,
                   horizontal: 25),
@@ -94,11 +100,11 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold,
                       ),
-                      )
+                      ),
 
                     ],
                   ),
-              )
+              ),
             ],
           )),
         ),
